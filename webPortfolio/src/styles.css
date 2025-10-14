@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+body {
+    background-image: url('/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: left center; /* focus the left side of the image */
+    background-attachment: fixed;     /* optional: parallax-like effect */
+    background-size: cover;           /* make it fill the screen */
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    min-height: 100vh;
+    width: 100%;
+}

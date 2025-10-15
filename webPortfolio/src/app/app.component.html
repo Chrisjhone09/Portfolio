@@ -1,20 +1,104 @@
-<div class="flex flex-col p-5">
-  <div class="w-full flex justify-end text-white gap-5">
-    <h1 class="hover-underline">About me</h1>
-    <h1 class="hover-underline">Services</h1>
-    <h1 class="hover-underline">Skills</h1>
-    <h1 class="hover-underline">Contact</h1>
+<div class="flex flex-col p-4 sm:p-6 md:p-8 lg:p-10 max-w-7xl mx-auto">
+  
+
+  <!-- Hero Section -->
+  <div class="flex flex-col lg:flex-row-reverse items-center lg:items-start text-center lg:text-right gap-6">
+    <!-- Profile Image -->
+    <div
+      class="hidden lg:block w-48 h-48 sm:w-56 sm:h-56 xl:w-80 xl:h-80 rounded-full overflow-hidden border-4 border-gray-300 shadow-lg lg:ml-10 flex-shrink-0">
+      <img src="me.jpg" alt="Chris Jhone Radana" class="w-full h-full object-cover">
+    </div>
+
+    <!-- Text Content -->
+    <div class="flex flex-col w-full px-2 sm:px-4">
+      <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-bold text-white mt-4">
+        Hi, I'm Chris Jhone Radana
+      </h1>
+      <h2 class="text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-4xl text-gray-300 mt-3">
+        A Passionate Developer and Virtual Assistant
+      </h2>
+      <p
+        class="text-gray-300 mt-5 lg:w-[55%] w-full mx-auto lg:ml-auto lg:mr-0 text-justify lg:text-right text-sm sm:text-base lg:text-lg leading-relaxed">
+        I help busy professionals stay organized and grow online through smart systems and beautiful websites
+        that capture their brand’s personality. As your Virtual Assistant and Web Developer, I’m here to make
+        your ideas a reality.
+      </p>
+      <div class="mt-8">
+        <button
+          class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition-all w-full sm:w-auto mx-auto lg:ml-auto">
+          Make an Appointment
+        </button>
+      </div>
+    </div>
   </div>
-  <div >
-    
-    <div class="flex flex-col">
-      <h1 class="text-5xl font-bold text-white mt-10">Hi, I'm Chris Jhone Radana</h1>
-      <h2 class="text-2xl text-gray-300 mt-5 ">A Passionate Developer and Virtual Assistant</h2>
-      <p class="text-gray-300 mt-5 max-w-lg text-justify">I help busy professionals stay organized and grow online through smart systems and beautiful websites that capture their brand’s personality.
-                                                As your Virtual Assistant and Web Developer, I’m here to make your ideas a reality.</p>
-      <div class="mt-10">
-        <button class="bg-blue-600 text-white px-6 py-3 rounded mr-5 hover:bg-blue-700 transition">Hire Me</button>
-        <button class="bg-gray-800 text-white px-6 py-3 rounded hover:bg-gray-700 transition">Download CV</button>
+
+  <!-- About Section -->
+  <div
+    class="w-full h-auto mt-10 bg-white rounded-4xl opacity-80 shadow-lg p-6 sm:p-8 md:p-10 flex flex-col md:flex-row items-center justify-center gap-6">
+    <!-- Profile Image (mobile only) -->
+    <div
+      class="lg:hidden w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-gray-300 shadow-md">
+      <img src="me.jpg" class="w-full h-full object-cover">
+    </div>
+
+    <!-- About Me Text -->
+    <div class="text-center md:text-left max-w-2xl px-2 sm:px-4">
+      <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">About Me</h2>
+
+      <p class="text-gray-600 leading-relaxed mb-4 text-sm sm:text-base md:text-lg">
+        I’m an aspiring and detail-oriented
+        <span class="text-blue-600 font-medium">Virtual Assistant</span> who’s eager to help businesses stay organized,
+        efficient, and productive. I’m currently developing my skills in managing administrative tasks, scheduling,
+        email correspondence, and maintaining smooth day-to-day operations to provide reliable virtual support in the near future.
+      </p>
+
+      <p class="text-gray-600 leading-relaxed mb-4 text-sm sm:text-base md:text-lg">
+        Alongside my virtual assistant work, I’m also a growing
+        <span class="text-blue-600 font-medium">Web Developer</span>. I love bringing ideas to life through clean,
+        responsive, and user-friendly websites using
+        <span class="font-semibold">Angular</span> and <span class="font-semibold">.NET Framework</span>.
+      </p>
+
+      <p class="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg">
+        I’m constantly learning new tools and techniques to improve both my technical and professional skills.
+        Whether it’s assisting clients virtually or building a website from scratch, I take pride in delivering
+        quality results that make a difference.
+      </p>
+    </div>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="w-full bg-white rounded-4xl opacity-90 shadow-lg p-6 sm:p-8 md:p-10 mt-10">
+    <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 text-center mb-8">My Skills</h2>
+
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Virtual Assistant Skills -->
+      <div class="bg-blue-50 p-6 sm:p-8 rounded-3xl shadow-sm hover:shadow-md transition flex flex-col justify-between">
+        <h3 class="text-xl sm:text-2xl font-semibold text-blue-700 mb-4 flex items-center gap-2">
+          <i class="fa-solid fa-headset text-blue-600"></i> Virtual Assistant
+        </h3>
+        <ul class="text-gray-700 space-y-2 list-disc list-inside text-sm sm:text-base">
+          <li>Task and time management</li>
+          <li>Email and calendar organization</li>
+          <li>Data entry and documentation</li>
+          <li>Google Workspace & Microsoft Office</li>
+          <li>Social media management and scheduling</li>
+          <li>Online communication tools (Zoom, Slack, Teams)</li>
+        </ul>
+      </div>
+
+      <!-- Technical Skills -->
+      <div class="bg-indigo-50 p-6 sm:p-8 rounded-3xl shadow-sm hover:shadow-md transition flex flex-col justify-between">
+        <h3 class="text-xl sm:text-2xl font-semibold text-indigo-700 mb-4 flex items-center gap-2">
+          <i class="fa-solid fa-code text-indigo-600"></i> Technical Skills
+        </h3>
+        <ul class="text-gray-700 space-y-2 list-disc list-inside text-sm sm:text-base">
+          <li><span class="font-semibold text-blue-700">Languages:</span> C#, TypeScript, Java, SQL</li>
+          <li><span class="font-semibold text-indigo-700">Frameworks:</span> ASP.NET Core Web API, ASP.NET Core MVC, Entity Framework Core, .NET Windows Form App</li>
+          <li><span class="font-semibold text-purple-700">Front-end:</span> Angular, Tailwind CSS, HTML, CSS</li>
+          <li><span class="font-semibold text-green-700">Tools:</span> Git, Visual Studio, Visual Studio Code, ChatGPT</li>
+          <li><span class="font-semibold text-yellow-700">Database:</span> SQL Server Management Studio</li>
+        </ul>
       </div>
     </div>
   </div>

@@ -30,6 +30,78 @@
   transform: scaleX(1);
 }
 
+svg {
+  fill: white;
+}
+
+svg:hover {
+  fill:skyblue
+}
+
+/* Smooth fade-in and slide animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+
+/* Profile image pop-in + float */
+.profile-img {
+  opacity: 0;
+  transform: scale(0.9);
+  animation: popIn 1.2s ease forwards, float 6s ease-in-out infinite;
+}
+
+@keyframes popIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Button hover scale */
+.scale-hover {
+  transition: transform 0.3s ease;
+}
+
+.scale-hover:hover {
+  transform: scale(1.05);
+}
+
+/* Social icons subtle float and hover pulse */
+.float-hover {
+  transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+.float-hover:hover {
+  transform: translateY(-5px) scale(1.1);
+  opacity: 0.8;
+}
+
+/* Container fade-in */
+.animated-container {
+  animation: fadeUp 1.5s ease forwards;
+}
 
 
 

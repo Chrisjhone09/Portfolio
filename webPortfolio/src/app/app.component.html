@@ -1,38 +1,77 @@
-<div class="w-full h-[10vh] flex items-center justify-center text-xl  text-white shadow-md mb-6">
-  <div class="w-[50vw] flex justify-evenly">
-    <h1 class="hover-underline">About</h1>
-    <h1 class="hover-underline">Skills</h1>
-    <h1 class="hover-underline">Contact</h1>
-  </div>
-</div>
-<div class="flex flex-col p-4 sm:p-6 md:p-8 lg:p-10 max-w-7xl mx-auto">
-
-  
-  <!-- Hero Section -->
-  <div
-    class="flex flex-col h-[90vh] lg:justify-center items-center lg:flex-row-reverse gap-6 animated-container">
-    <!-- Profile Image -->
-     <div class="absolute inset-0 -z-10 blob-bg"></div>
-     
-    <div id="image-container"
-      class="hidden lg:block w-48 h-48 sm:w-80 sm:h-80 xl:w-120 xl:h-120 rounded-full overflow-hidden border-4 border-gray-300 shadow-lg lg:ml-10 flex-shrink-0 profile-img">
-      <img src="me.jpg" alt="Chris Jhone Radana" class="w-full h-full object-cover">
-      <div class="box"></div>
-      
+<nav class="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="me.jpg" class="h-8" alt="Flowbite Logo" style="border-radius: 50%;">
+      <span class="self-center text-2xl font-semibold whitespace-nowrap text-gray-900">Chris Jhone</span>
+    </a>
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <button type="button"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center">
+        Get started
+      </button>
+      <button data-collapse-toggle="navbar-sticky" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+        aria-controls="navbar-sticky" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
     </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul
+        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+        <li>
+          <a href="#"
+            class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0"
+            aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="#"
+            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">About</a>
+        </li>
+        <li>
+          <a href="#"
+            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Services</a>
+        </li>
+        <li>
+          <a href="#"
+            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<!-- Hero Section -->
+<div
+  class="relative h-[100vh] flex flex-col  lg:justify-center items-center lg:flex-row-reverse gap-6 animated-container overflow-hidden mt-20">
+  <!-- Background covering full viewport -->
+  <div id="hero-section" class="absolute">
+  </div>
+  <div class="w-[95vw] lg:w-[70vw] flex">
+
 
     <!-- Text Content -->
-    <div class="flex flex-col w-full px-2 sm:px-4 text-content">
-      <h1
-        class="text-2xl sm:text-3xl lg:text-left md:text-4xl lg:text-5xl 2xl:text-5xl font-bold text-white mt-4 fade-in-up">
-        Hi, I'm Chris Jhone Radana 
+    <div class="flex flex-col w-full px-2 sm:px-4 text-content relative">
+      <!-- <h1
+        class="text-2xl sm:text-3xl lg:text-left md:text-2xl lg:text-2xl 2xl:text-2xl font-bold text-black mt-4 fade-in-up">
+        Hi there!
+      </h1> -->
+      <h1 id="name"
+        class="text-lg sm:text-3xl lg:text-left md:text-4xl lg:text-lg 2xl:text-4xl font-bold text-blue-600 mt-4 fade-in-up">
+        CHRIS JHONE RADANA
       </h1>
       <h2
-        class="text-base sm:text-lg md:text-xl lg:text-left lg:text-2xl 2xl:text-4xl text-gray-300 mt-3 fade-in-up delay-1">
+        class="text-base sm:text-lg md:text-xl lg:text-left lg:text-2xl 2xl:text-2xl text-gray-700 mt-3 fade-in-up delay-1">
         A Passionate Developer and Virtual Assistant
       </h2>
       <p
-        class="text-gray-300 mt-5 lg:w-full lg:text-left w-full mx-auto lg:ml-auto lg:mr-0 text-justify text-sm sm:text-base lg:text-lg leading-relaxed fade-in-up delay-2">
+        class="text-gray-800 mt-5 lg:w-full lg:text-left w-full mx-auto lg:ml-auto lg:mr-0 text-justify text-sm sm:text-base lg:text-lg leading-relaxed fade-in-up delay-2">
         I help busy professionals stay organized and grow online through smart systems and beautiful websites
         that capture their brand’s personality. As your Virtual Assistant and Web Developer, I’m here to make
         your ideas a reality.
@@ -59,82 +98,18 @@
             d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z" />
         </svg>
       </div>
+      <img src="arrow.png" alt="" class="arrow">
+    </div>
+    <div id="image-container z-10"
+      class="hidden lg:block w-48 h-48 sm:w-80 sm:h-80 xl:w-120 xl:h-120 rounded-full overflow-hidden border-4 border-gray-300 shadow-lg lg:ml-10 flex-shrink-0 profile-img">
+      <img src="me.jpg" alt="Chris Jhone Radana" class="w-full h-full object-cover">
+      <div class="box"></div>
     </div>
   </div>
-
-
-  <!-- About Section -->
-  <div
-    class="w-full h-auto mt-10 bg-white rounded-4xl opacity-80 shadow-lg p-6 sm:p-8 md:p-10 flex flex-col md:flex-row items-center justify-center gap-6">
-    <!-- Profile Image (mobile only) -->
-    <div
-      class="lg:hidden w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-gray-300 shadow-md">
-      <img src="me.jpg" class="w-full h-full object-cover">
-    </div>
-
-    <!-- About Me Text -->
-    <div class="text-center md:text-left max-w-2xl px-2 sm:px-4">
-      <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">About Me</h2>
-
-      <p class="text-gray-600 leading-relaxed mb-4 text-sm sm:text-base md:text-lg">
-        I’m an aspiring and detail-oriented
-        <span class="text-blue-600 font-medium">Virtual Assistant</span> who’s eager to help businesses stay organized,
-        efficient, and productive. I’m currently developing my skills in managing administrative tasks, scheduling,
-        email correspondence, and maintaining smooth day-to-day operations to provide reliable virtual support in the
-        near future.
-      </p>
-
-      <p class="text-gray-600 leading-relaxed mb-4 text-sm sm:text-base md:text-lg">
-        Alongside my virtual assistant work, I’m also a growing
-        <span class="text-blue-600 font-medium">Web Developer</span>. I love bringing ideas to life through clean,
-        responsive, and user-friendly websites using
-        <span class="font-semibold">Angular</span> and <span class="font-semibold">.NET Framework</span>.
-      </p>
-
-      <p class="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg">
-        I’m constantly learning new tools and techniques to improve both my technical and professional skills.
-        Whether it’s assisting clients virtually or building a website from scratch, I take pride in delivering
-        quality results that make a difference.
-      </p>
-    </div>
-  </div>
-
-  <!-- Skills Section -->
-  <div class="w-full bg-white rounded-4xl opacity-90 shadow-lg p-6 sm:p-8 md:p-10 mt-10">
-    <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 text-center mb-8">My Skills</h2>
-
-    <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
-      <!-- Virtual Assistant Skills -->
-      <div class="bg-blue-50 p-6 sm:p-8 rounded-3xl shadow-sm hover:shadow-md transition flex flex-col justify-between">
-        <h3 class="text-xl sm:text-2xl font-semibold text-blue-700 mb-4 flex items-center gap-2">
-          <i class="fa-solid fa-headset text-blue-600"></i> Virtual Assistant
-        </h3>
-        <ul class="text-gray-700 space-y-2 list-disc list-inside text-sm sm:text-base">
-          <li>Task and time management</li>
-          <li>Email and calendar organization</li>
-          <li>Data entry and documentation</li>
-          <li>Google Workspace & Microsoft Office</li>
-          <li>Social media management and scheduling</li>
-          <li>Online communication tools (Zoom, Slack, Teams)</li>
-        </ul>
-      </div>
-
-      <!-- Technical Skills -->
-      <div
-        class="bg-indigo-50 p-6 sm:p-8 rounded-3xl shadow-sm hover:shadow-md transition flex flex-col justify-between">
-        <h3 class="text-xl sm:text-2xl font-semibold text-indigo-700 mb-4 flex items-center gap-2">
-          <i class="fa-solid fa-code text-indigo-600"></i> Technical Skills
-        </h3>
-        <ul class="text-gray-700 space-y-2 list-disc list-inside text-sm sm:text-base">
-          <li><span class="font-semibold text-blue-700">Languages:</span> C#, TypeScript, Java, SQL</li>
-          <li><span class="font-semibold text-indigo-700">Frameworks:</span> ASP.NET Core Web API, ASP.NET Core MVC,
-            Entity Framework Core, .NET Windows Form App</li>
-          <li><span class="font-semibold text-purple-700">Front-end:</span> Angular, Tailwind CSS, HTML, CSS</li>
-          <li><span class="font-semibold text-green-700">Tools:</span> Git, Visual Studio, Visual Studio Code, ChatGPT
-          </li>
-          <li><span class="font-semibold text-yellow-700">Database:</span> SQL Server Management Studio</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  <!-- Profile Image -->
+  <img src="code.png" alt="" class="scatter scatter1">
+  <img src="va.png" class="scatter scatter2">
+  <img src="excel.png" alt="" class="scatter scatter3">
+  <img src="email.png" alt="" class="scatter scatter4">
+  <img src="dev.png" alt="" class="scatter scatter5">
 </div>

@@ -118,38 +118,78 @@ svg:hover {
 
 
  #name {
-  font-family: 'MyFont', sans-serif;
+  font-family: 'Mont', sans-serif;
  }
 
-.scatter {
+
+@media (max-width: 1020px)  {
+
+  .picture-me {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  opacity: 0.2;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 1;
+  bottom: 0%;
+  left: 7%;
+  height: 50%;
 }
 
-.scatter1 { top: 20%; left: 50%; transform: rotate(10deg); }
-.scatter2 { bottom: 30%; right: 50%; transform: rotate(-50deg); }
-.scatter3 { bottom: 30%; right: 10%; transform: rotate(20deg); }
-@media (max-width: 640px) {
-  .scatter1, .scatter2, .scatter3 {
-    width: 50px;       /* smaller size for mobile */
-    height: 50px;
-  }
-  .scatter1 { left: 70%; top: 30%; transform: rotate(-20deg); height: 80px; width: 80px; }
-  .scatter2 { bottom: 20%; right: 40%; transform: rotate(-30deg); }
-  .scatter3 { bottom: 40%; right: 5%; transform: rotate(15deg); }
-  .scatter4 { left: 10%; bottom: 40%; transform: rotate(40deg); height: 50px; width: 50px; }
-  .scatter5 { bottom: 35%; right: 30%; transform: rotate(-15deg); }
+
+}
+
+.title-header-Mont {
+  font-family: 'Mont', sans-serif;
+}
+
+.text-content {
+  font-family: 'CreatoDisplay', sans-serif;
+}
+
+.title-header-Bondrians {
+  font-family: 'Bondrians', sans-serif;
+}
+
+.title-header-Heavitas {
+  font-family: 'Heavitas', sans-serif;
 }
 
 .arrow {
   position: absolute;
   bottom: 10px;
-  right: 25%;
+  left: 40%;
   width: 70px;
   height: 70px;
   transform: rotate(-60deg);
 }
+
+.icon {
+  fill: white;
+  height: 70%;
+}
+
+.icon-container {
+  border-radius: 50%;
+  background-color: #4383fa;
+  height: 70px;
+  width: 70px;
+}
+
+
+
+.wave-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #f5f7fa; /* Light gray background */
+}
+
+/* Wave 1 - darkest blue */
+.wave1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  clip-path:ellipse() ;
+  background-color: #075cfa;
+}
+
+
